@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CoinTrapping</title>
+	<link rel="shortcut icon" href="resource/Icon.svg" type="image/svg">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body onload="LoadListId()">
+	<div id="content__container">
+		<form id="content_form">
+			<fieldset>
+				<legend>Личные данные</legend>
+				<label for="lastname" >Фамилия</label>
+				<input id="lastname" type="textfield" autocomplete="off" required pattern="[A-Za-zА-Яа-я]+" autofocus>
+
+				<label for="firstname">Имя</label>
+				<input id="firstname" type="textfield" autocomplete="off" required pattern="[A-Za-zА-Яа-я]+">
+
+				<label for="surname">Отчество</label>
+				<input id="surname" type="textfield" autocomplete="off" required pattern="[A-Za-zА-Яа-я]+">
+
+				<br><br>
+
+				<label for="address">Номер</label>
+				<input id="address" type="textfield" autocomplete="off" pattern="[A-Za .,0-9]{8}" required>				
+
+				<br><br>
+
+				<label for="clnmber">Время</label>
+				<!-- <input id="clnmber" type="textfield" autocomplete="off" pattern="[0-9]{1,2}" required> -->
+				<input id="clnmber" type="time" autocomplete="off" pattern="[0-9]{1,2}" required>
+
+				<label for="olymp" >Оплачено</label>
+				<input id="olymp" type="checkbox">	
+				    <br/>
+		<br/>
+			</fieldset>
+<div id="inputs"></div>
+			<fieldset>
+				<div id="buttons">
+					<input class="fasad_button" type="button" value="Добавить пользователя" onclick="AddPerson()">
+					<input class="fasad_button" type="button" value="Отчистить бд" onclick="Temp()">
+					<select id="listId"></select>		
+					<input class="fasad_button" type="button" value="Удалить по ID" onclick="DeletePerson()">
+					<input id="controlTable" class="fasad_button" type="button" value="Просмотреть таблицу" onclick="ShowTable()">
+					<input id="controlPlus" class="fasad_button" type="button" value="Оплатившие" onclick="RefreshTableDatePlus()">
+					<br/>
+					<br/>
+					<input id="controlNX" class="fasad_button" type="button" value="Данные по рекордсменам" onclick="RefreshTableDateNX()">
+				</div>
+			</fieldset>
+
+		
+
+			<fieldset id="containder__table">
+				<legend align="center">Список водителей</legend>
+				<table id="fasad_table">
+					<thead>
+						<th>ФИО</th>
+						<th>Номер</th>
+						<th>Время</th>
+						<th>Оплаченно</th>
+					</thead>
+					<tbody id="tablePersons">
+						
+					</tbody>
+					<div id="maxMinTable" align="center">
+</div>
+				</table>
+			</fieldset>
+		 </form>
+	<fieldset>
+				
+				
+				<input id="npb" class="fasad_button" type="button" value="Добавить свойство" onclick="createNewInput()">
+					<label for="name_ntf">Наименование поля</label>
+				<input id="name_ntf" type="textfield" autocomplete="off">
+				<br/>
+				<br/>
+				<input id="npb" class="fasad_button" type="button" value="Добавить значение" onclick="addMeanNewInput()">
+
+				<label for="ntf">Значение поля</label>
+				<input id="ntf" type="textfield" autocomplete="off"> 
+				<label for="ntf">Фамилия</label>
+				<input id="ntf2" type="textfield" autocomplete="off">	
+			</fieldset>
+	</div>
+
+       
+</body>
+</html>

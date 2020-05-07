@@ -1,0 +1,106 @@
+body {
+	background-image: url(../resource/501.jpg);
+	background-repeat: no-repeat;
+	 background-size: cover; 
+	font-size: 17px;
+	font-weight: lighter;
+	font-family: Comic Sans MS;
+}
+
+/* content container */
+	#content__container {
+	margin: 100px auto;
+	width: 1200px;
+	min-height: 300px;
+	}
+/* content form */
+
+	#content_form {
+		padding: 20px;
+	}
+
+	fieldset {
+		border-radius: 10px;
+		margin-top: 15px;
+		border-color:  #E9DEDC;
+	}
+#addNewInput{
+    margin-top: 30px;
+    display: none;
+}
+
+	#content_form input[type="textfield"] {
+		margin-right: 25px;
+		margin-left: 5px;
+	}
+
+	input:invalid {
+		border:1px solid red;
+	}
+
+	input:valid {
+		border: 1px solid green;
+	}
+
+	input[type = "button"] {
+		width: 190px;
+		height: 40px;
+		background-color: transparent;
+		
+		border-style: 2px;
+		border-radius: 5px;
+		font-weight: lighter;
+		font-family: Comic Sans MS;
+	}
+
+	#address {
+		width: 350px;
+	}
+
+
+
+#classes {
+    display: flex;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+	#buttons{
+		padding: 15px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.fasad_button{
+		margin: 0;
+		width: 120px;
+		height: 25px;		
+	}
+
+	#containder__table {
+		display: none;
+		padding: 0;
+		padding-top: 5px;
+		margin-top: 15px;
+	}
+
+	#fasad_table{
+		margin: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	#listId {
+		width: 50px;
+		height: 25px;
+	}
+
+
+	#npb {
+		margin-right: 25px;
+	}
